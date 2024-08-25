@@ -18,6 +18,7 @@ from django.template import loader
 #     return HttpResponse(temp.render())
 
 
-def hello (request):
+# def hello (request):
+#     return render(request,'index.html')
+def hello(request):
     return render(request,'index.html')
-    
