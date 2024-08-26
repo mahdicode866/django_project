@@ -21,4 +21,4 @@ from django.template import loader
 # def hello (request):
 #     return render(request,'index.html')
 def hello(request):
-    return render(request,'index.html')
+    return render(request,'website/index.html')
