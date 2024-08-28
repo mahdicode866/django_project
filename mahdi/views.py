@@ -20,5 +20,11 @@ from django.template import loader
 
 # def hello (request):
 #     return render(request,'index.html')
-def hello(request):
+def index(request):
     return render(request,'website/index.html')
+
+def about(request):
+    return render(request,"website/about.html")
+
+def contact(request):
+    return render(request,"website/contact.html")
