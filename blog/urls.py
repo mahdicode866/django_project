@@ -7,5 +7,6 @@ app_name="blog"
 urlpatterns=[
     
     path('',views.blog,name='index'),
-    path('single',views.single,name='single'),
+    path('<int:pid>',views.single,name='single'),
+    path("test",views.test)
 ]
