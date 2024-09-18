@@ -9,9 +9,10 @@ def blog(request):
     return render(request,"blog/blog-home.html",context=context)
 
 def single(request,pid):
-    mydata=get_object_or_404(post,pk=pid)
+    mydata=get_object_or_404(post,pk=pid,status=1)
     context={"mydata":mydata}
     return render(request,"blog/blog-single.html",context=context)
+
 
 def test(request,pid):
     # mydata=get_object_or_404(post,pk=pid)
